@@ -5,30 +5,44 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2015-04-25T19:41:30-00:00</lastmod>
+<lastmod>2015-04-25T20:33:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2015-04-25T19:41:30-00:00</lastmod>
+<lastmod>2015-04-25T20:33:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2015-04-25T19:41:30-00:00</lastmod>
+<lastmod>2015-04-25T20:33:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2015-04-25T19:41:30-00:00</lastmod>
+<lastmod>2015-04-25T20:33:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
+</url>
+
+<url>
+<loc>/markdown.html</loc>
+<lastmod>2015-04-25T20:31:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>/pelican-tips.html</loc>
+<lastmod>2015-04-25T20:12:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
 </url>
 
 <url>
@@ -46,22 +60,50 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/category/web-site.html</loc>
+<lastmod>2015-04-25T20:31:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/tag/pelican.html</loc>
-<lastmod>2015-04-25T17:51:00+00:09</lastmod>
+<lastmod>2015-04-25T20:12:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/tips.html</loc>
+<lastmod>2015-04-25T20:12:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/markdown.html</loc>
+<lastmod>2015-04-25T20:31:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/cheatsheet.html</loc>
+<lastmod>2015-04-25T20:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/publishing.html</loc>
-<lastmod>2015-04-25T17:51:00+00:09</lastmod>
+<lastmod>2015-04-25T20:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/author/salih-emin.html</loc>
-<lastmod>2015-04-25T17:51:00+00:09</lastmod>
+<lastmod>2015-04-25T20:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
