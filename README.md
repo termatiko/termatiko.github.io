@@ -1,4 +1,4 @@
-sysadmin dot github dot io
+Sysadmin Notes
 ==========================
 
-Sysadmin Notes
+http://utappia.github.io

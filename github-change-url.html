@@ -6,7 +6,9 @@
         <meta name="author" content="Salih Emin" />
         <meta name="copyright" content="Salih Emin" />
 
-        <title>Sysadmin Notes - Authors</title>
+<meta name="keywords" content="git, url, Repository, " />
+        <title>Changing a remote's URL  · Sysadmin Notes
+</title>
         <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./theme/css/style.css" media="screen">
@@ -46,10 +48,61 @@
             <div class="row-fluid">
                 <div class="span1"></div>
                 <div class="span10">
-    <h1>Authors on Sysadmin Notes</h1>
+<article>
+<div class="row-fluid">
+    <header class="page_header span10 offset2">
+    <h1><a href="./github-change-url.html"> Changing a remote's URL  </a></h1>
+    </header>
+</div>
 
-    <ul>        <li><a href="./author/salih-emin.html">Salih Emin</a> (4)</li>
-    </ul>
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            <h1>How to change the remote url of a local repository</h1>
+<p>The<code>git remote set-url</code> command changes an existing remote repository URL. </p>
+<p><em>Syntax:</em></p>
+<p><code>git remote set-url &lt;name&gt; &lt;newurl&gt; &lt;oldurl&gt;</code></p>
+<p>The <code>git remote set-url</code> command takes two arguments:</p>
+<ul>
+<li>An existing remote name <code>&lt;name&gt;</code>. For example, origin (or upstream are two common choices).</li>
+<li>The new url <code>&lt;newurl&gt;</code> followed by the old url <code>&lt;oldurl&gt;</code>.</li>
+</ul>
+<p><em>Example:</em></p>
+<p><code>git remote set-url origin https://github.com/username/new.git https://github.com/username/old.git</code></p>
+            <aside>
+            <hr/>
+            <nav>
+            <ul class="articles_timeline">
+ 
+                <li class="previous_article">« <a href="./markdown.html" title="Previous: Markdown Typography">Markdown Typography</a></li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+ 
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2015-04-25T22:43:00+02:00">Απρ 25, 2015</time>
+ 
+            <h4>Last Updated</h4>
+            <div class="last_updated">2015-04-25 22:43:00+02:00</div>
+            <h4>Category</h4>
+            <a class="category-link" href="/categories.html#Repository-ref">Repository</a> 
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article"> 
+                <li><a href="/tags.html#git-ref">git
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#url-ref">url
+                    <span>1</span>
+</a></li>
+            </ul>
+
+        </div>
+        </section>
+</div>
+</article>
                 </div>
                 <div class="span1"></div>
             </div>
@@ -61,7 +114,7 @@
         <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
     </ul>
 </div>
-</footer>        <script src="http://code.jquery.com/jquery.min.js"></script>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
         <script>
             function validateForm(query)
@@ -69,5 +122,6 @@
                 return (query.length > 0);
             }
         </script>
+
     </body>
 </html>
