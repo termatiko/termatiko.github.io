@@ -4,133 +4,133 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2015-04-27T02:32:44-00:00</lastmod>
+<loc>https://termatiko.github.io/</loc>
+<lastmod>2015-04-27T02:44:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2015-04-27T02:32:44-00:00</lastmod>
+<loc>https://termatiko.github.io/archives.html</loc>
+<lastmod>2015-04-27T02:44:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2015-04-27T02:32:44-00:00</lastmod>
+<loc>https://termatiko.github.io/tags.html</loc>
+<lastmod>2015-04-27T02:44:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2015-04-27T02:32:44-00:00</lastmod>
+<loc>https://termatiko.github.io/categories.html</loc>
+<lastmod>2015-04-27T02:44:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/github-change-url.html</loc>
+<loc>https://termatiko.github.io/github-change-url.html</loc>
 <lastmod>2015-04-25T22:43:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>/markdown.html</loc>
+<loc>https://termatiko.github.io/markdown.html</loc>
 <lastmod>2015-04-25T20:31:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>/pelican-tips.html</loc>
+<loc>https://termatiko.github.io/pelican-tips.html</loc>
 <lastmod>2015-04-25T20:12:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>/hello-world.html</loc>
+<loc>https://termatiko.github.io/hello-world.html</loc>
 <lastmod>2015-04-25T17:51:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>/category/news.html</loc>
+<loc>https://termatiko.github.io/category/news.html</loc>
 <lastmod>2015-04-25T17:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/repository.html</loc>
+<loc>https://termatiko.github.io/category/repository.html</loc>
 <lastmod>2015-04-25T22:43:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/web-site.html</loc>
+<loc>https://termatiko.github.io/category/web-site.html</loc>
 <lastmod>2015-04-25T20:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/pelican.html</loc>
+<loc>https://termatiko.github.io/tag/pelican.html</loc>
 <lastmod>2015-04-25T20:12:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/git.html</loc>
+<loc>https://termatiko.github.io/tag/git.html</loc>
 <lastmod>2015-04-25T22:43:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/publishing.html</loc>
+<loc>https://termatiko.github.io/tag/publishing.html</loc>
 <lastmod>2015-04-25T20:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/url.html</loc>
+<loc>https://termatiko.github.io/tag/url.html</loc>
 <lastmod>2015-04-25T22:43:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/markdown.html</loc>
+<loc>https://termatiko.github.io/tag/markdown.html</loc>
 <lastmod>2015-04-25T20:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/cheatsheet.html</loc>
+<loc>https://termatiko.github.io/tag/cheatsheet.html</loc>
 <lastmod>2015-04-25T20:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/tips.html</loc>
+<loc>https://termatiko.github.io/tag/tips.html</loc>
 <lastmod>2015-04-25T20:12:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/salih-emin.html</loc>
+<loc>https://termatiko.github.io/author/salih-emin.html</loc>
 <lastmod>2015-04-25T22:43:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
