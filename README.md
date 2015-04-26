@@ -1,6 +1,6 @@
 Sysadmin Notes
 ==========================
-Termatiko (greek for terminal) is a personal web notepad dedicated for sysadmin tasks. It will always be in a rolling release state where articles will be updated even if they were released in an erlear date.
+Termatiko (greek for terminal) is a personal web notepad dedicated for keeping notes of sysadmin tasks. It will always be in a rolling release state where articles will be updated even if they were released in an earlier date.
 
 * Website: https://termatiko.github.io
 * Contact: https://github.com/termatiko/
