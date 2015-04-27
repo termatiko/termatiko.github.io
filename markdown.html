@@ -20,6 +20,7 @@
         <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" />
         <link rel="icon" href="./theme/images/apple-touch-icon-144x144.png" />
+        <link href="http://termatiko.github.io/feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="termatiko@sysadmin.notes:~$ - Full Atom Feed" />
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-62296099-1']);
@@ -68,8 +69,8 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
 
-            <h1>Typography</h1>
-<h2>Headings</h2>
+            <html><body><h1 id="typography">Typography</h1>
+<h2 id="headings">Headings</h2>
 <p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
 <div class="highlight"><pre><span class="c"># h1 Heading</span>
 <span class="c">## h2 Heading</span>
@@ -78,15 +79,13 @@
 <span class="c">##### h5 Heading</span>
 <span class="c">###### h6 Heading</span>
 </pre></div>
-
-
 <p>Renders to:</p>
-<h1>h1 Heading</h1>
-<h2>h2 Heading</h2>
-<h3>h3 Heading</h3>
-<h4>h4 Heading</h4>
-<h5>h5 Heading</h5>
-<h6>h6 Heading</h6>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
 <p>HTML:</p>
 <div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>h1 Heading<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>h2 Heading<span class="nt">&lt;/h2&gt;</span>
@@ -95,12 +94,10 @@
 <span class="nt">&lt;h5&gt;</span>h5 Heading<span class="nt">&lt;/h5&gt;</span>
 <span class="nt">&lt;h6&gt;</span>h6 Heading<span class="nt">&lt;/h6&gt;</span>
 </pre></div>
-
-
-<p><br>
-<br>
-<br></p>
-<h2>Horizontal Rules</h2>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
 <p>The HTML <code>&lt;hr&gt;</code> element is for creating a "thematic break" between paragraph-level elements. In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following:</p>
 <ul>
 <li><code>___</code>: three consecutive underscores</li>
@@ -108,74 +105,58 @@
 <li><code>***</code>: three consecutive asterisks</li>
 </ul>
 <p>renders to:</p>
-<hr />
-<hr />
-<hr />
-<p><br>
-<br>
-<br></p>
-<h2>Body Copy</h2>
+<hr/>
+<hr/>
+<hr/>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="body-copy">Body Copy</h2>
 <p>Body copy written as normal, plain text will be wrapped with <code>&lt;p&gt;&lt;/p&gt;</code> tags in the rendered HTML.</p>
 <p>So this body copy:</p>
 <div class="highlight"><pre><span class="n">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span><span class="p">,</span> <span class="n">graecis</span> <span class="n">denique</span> <span class="n">ei</span> <span class="n">vel</span><span class="p">,</span> <span class="n">at</span> <span class="n">duo</span> <span class="n">primis</span> <span class="n">mandamus</span><span class="p">.</span> <span class="n">Et</span> <span class="n">legere</span> <span class="n">ocurreret</span> <span class="n">pri</span><span class="p">,</span> <span class="n">animal</span> <span class="n">tacimates</span> <span class="n">complectitur</span> <span class="n">ad</span> <span class="n">cum</span><span class="p">.</span> <span class="n">Cu</span> <span class="n">eum</span> <span class="n">inermis</span> <span class="n">inimicus</span> <span class="n">efficiendi</span><span class="p">.</span> <span class="n">Labore</span> <span class="n">officiis</span> <span class="n">his</span> <span class="n">ex</span><span class="p">,</span> <span class="n">soluta</span> <span class="n">officiis</span> <span class="n">concludaturque</span> <span class="n">ei</span> <span class="n">qui</span><span class="p">,</span> <span class="n">vide</span> <span class="n">sensibus</span> <span class="n">vim</span> <span class="n">ad</span><span class="p">.</span>
 </pre></div>
-
-
 <p>renders to this HTML:</p>
 <div class="highlight"><pre><span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.<span class="nt">&lt;/p&gt;</span>
 </pre></div>
-
-
-<p><br>
-<br>
-<br></p>
-<h2>Emphasis</h2>
-<h3>Bold</h3>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="emphasis">Emphasis</h2>
+<h3 id="bold">Bold</h3>
 <p>For emphasizing a snippet of text with a heavier font-weight.</p>
 <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
 <div class="highlight"><pre><span class="o">**</span><span class="n">rendered</span> <span class="n">as</span> <span class="n">bold</span> <span class="n">text</span><span class="o">**</span>
 </pre></div>
-
-
 <p>renders to:</p>
 <p><strong>rendered as bold text</strong></p>
 <p>and this HTML</p>
 <div class="highlight"><pre><span class="nt">&lt;strong&gt;</span>rendered as bold text<span class="nt">&lt;/strong&gt;</span>
 </pre></div>
-
-
-<h3>Italics</h3>
+<h3 id="italics">Italics</h3>
 <p>For emphasizing a snippet of text with italics.</p>
 <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
 <div class="highlight"><pre><span class="n">_rendered</span> <span class="n">as</span> <span class="n">italicized</span> <span class="n">text_</span>
 </pre></div>
-
-
 <p>renders to:</p>
 <p><em>rendered as italicized text</em></p>
 <p>and this HTML:</p>
 <div class="highlight"><pre><span class="nt">&lt;em&gt;</span>rendered as italicized text<span class="nt">&lt;/em&gt;</span>
 </pre></div>
-
-
-<h3>strikethrough</h3>
+<h3 id="strikethrough">strikethrough</h3>
 <p>In GFM you can do strickthroughs. </p>
 <div class="highlight"><pre><span class="o">~~</span><span class="n">Strike</span> <span class="n">through</span> <span class="n">this</span> <span class="n">text</span><span class="p">.</span><span class="o">~~</span>
 </pre></div>
-
-
 <p>Which renders to:</p>
 <p>~~Strike through this text.~~</p>
-<p><br>
-<br>
-<br></p>
-<h2>Blockquotes</h2>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="blockquotes">Blockquotes</h2>
 <p>For quoting blocks of content from another source within your document.</p>
 <p>Add <code>&gt;</code> before any text you want to quote. </p>
 <div class="highlight"><pre><span class="n">Add</span> <span class="err">`</span><span class="o">&gt;</span><span class="err">`</span> <span class="n">before</span> <span class="n">any</span> <span class="n">text</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">quote</span><span class="p">.</span> 
 </pre></div>
-
-
 <p>Renders to:</p>
 <blockquote>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -185,8 +166,6 @@
   <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/blockquote&gt;</span>
 </pre></div>
-
-
 <p>Blockquotes can also be nested:</p>
 <div class="highlight"><pre><span class="o">&gt;</span> <span class="n">Donec</span> <span class="n">massa</span> <span class="n">lacus</span><span class="p">,</span> <span class="n">ultricies</span> <span class="n">a</span> <span class="n">ullamcorper</span> <span class="n">in</span><span class="p">,</span> <span class="n">fermentum</span> <span class="n">sed</span> <span class="n">augue</span><span class="p">.</span> 
 <span class="n">Nunc</span> <span class="n">augue</span> <span class="n">augue</span><span class="p">,</span> <span class="n">aliquam</span> <span class="n">non</span> <span class="n">hendrerit</span> <span class="n">ac</span><span class="p">,</span> <span class="n">commodo</span> <span class="n">vel</span> <span class="n">nisi</span><span class="p">.</span> 
@@ -195,8 +174,6 @@
 <span class="o">&gt;&gt;&gt;</span> <span class="n">Donec</span> <span class="n">massa</span> <span class="n">lacus</span><span class="p">,</span> <span class="n">ultricies</span> <span class="n">a</span> <span class="n">ullamcorper</span> <span class="n">in</span><span class="p">,</span> <span class="n">fermentum</span> <span class="n">sed</span> <span class="n">augue</span><span class="p">.</span> 
 <span class="n">Nunc</span> <span class="n">augue</span> <span class="n">augue</span><span class="p">,</span> <span class="n">aliquam</span> <span class="n">non</span> <span class="n">hendrerit</span> <span class="n">ac</span><span class="p">,</span> <span class="n">commodo</span> <span class="n">vel</span> <span class="n">nisi</span><span class="p">.</span> 
 </pre></div>
-
-
 <p>Renders to:</p>
 <blockquote>
 <p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
@@ -210,19 +187,17 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 </blockquote>
 </blockquote>
 </blockquote>
-<p><br>
-<br>
-<br></p>
-<h2>Lists</h2>
-<h3>Unordered</h3>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered">Unordered</h3>
 <p>A list of items in which the order of the items does not explicitly matter.</p>
 <p>You may use any of the following symbols to denote bullets for each list item:</p>
 <div class="highlight"><pre><span class="o">*</span> <span class="n">valid</span> <span class="n">bullet</span>
 <span class="o">-</span> <span class="n">valid</span> <span class="n">bullet</span>
 <span class="o">+</span> <span class="n">valid</span> <span class="n">bullet</span>
 </pre></div>
-
-
 <p>For example</p>
 <div class="highlight"><pre><span class="o">+</span> <span class="n">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span>
 <span class="o">+</span> <span class="n">Consectetur</span> <span class="n">adipiscing</span> <span class="n">elit</span>
@@ -237,8 +212,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 <span class="o">+</span> <span class="n">Aenean</span> <span class="n">sit</span> <span class="n">amet</span> <span class="n">erat</span> <span class="n">nunc</span>
 <span class="o">+</span> <span class="n">Eget</span> <span class="n">porttitor</span> <span class="n">lorem</span>
 </pre></div>
-
-
 <p>Renders to:</p>
 <ul>
 <li>Lorem ipsum dolor sit amet</li>
@@ -273,9 +246,7 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
   <span class="nt">&lt;li&gt;</span>Eget porttitor lorem<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 </pre></div>
-
-
-<h3>Ordered</h3>
+<h3 id="ordered">Ordered</h3>
 <p>A list of items in which the order of items does explicitly matter.</p>
 <div class="highlight"><pre><span class="mf">1.</span> <span class="n">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span>
 <span class="mf">2.</span> <span class="n">Consectetur</span> <span class="n">adipiscing</span> <span class="n">elit</span>
@@ -286,8 +257,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 <span class="mf">7.</span> <span class="n">Aenean</span> <span class="n">sit</span> <span class="n">amet</span> <span class="n">erat</span> <span class="n">nunc</span>
 <span class="mf">8.</span> <span class="n">Eget</span> <span class="n">porttitor</span> <span class="n">lorem</span>
 </pre></div>
-
-
 <p>Renders to:</p>
 <ol>
 <li>Lorem ipsum dolor sit amet</li>
@@ -311,8 +280,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
   <span class="nt">&lt;li&gt;</span>Eget porttitor lorem<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ol&gt;</span>
 </pre></div>
-
-
 <p><strong>TIP</strong>: If you just use <code>1.</code> for each number, GitHub will automatically number each item. For example:</p>
 <div class="highlight"><pre><span class="mf">1.</span> <span class="n">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span>
 <span class="mf">1.</span> <span class="n">Consectetur</span> <span class="n">adipiscing</span> <span class="n">elit</span>
@@ -323,8 +290,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 <span class="mf">1.</span> <span class="n">Aenean</span> <span class="n">sit</span> <span class="n">amet</span> <span class="n">erat</span> <span class="n">nunc</span>
 <span class="mf">1.</span> <span class="n">Eget</span> <span class="n">porttitor</span> <span class="n">lorem</span>
 </pre></div>
-
-
 <p>Renders to:</p>
 <ol>
 <li>Lorem ipsum dolor sit amet</li>
@@ -336,109 +301,93 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 <li>Aenean sit amet erat nunc</li>
 <li>Eget porttitor lorem</li>
 </ol>
-<p><br>
-<br>
-<br></p>
-<h2>Code</h2>
-<h3>Inline code</h3>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="code">Code</h2>
+<h3 id="inline-code">Inline code</h3>
 <p>Wrap inline snippets of code with <code>`</code>.</p>
 <p>For example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped as "inline".</p>
-<div class="highlight"><pre>For example, `<span class="nt">&lt;section&gt;&lt;/section&gt;</span>` should be wrapped as &quot;inline&quot;.
+<div class="highlight"><pre>For example, `<span class="nt">&lt;section&gt;&lt;/section&gt;</span>` should be wrapped as "inline".
 </pre></div>
-
-
-<h3>Indented code</h3>
+<h3 id="indented-code">Indented code</h3>
 <p>Or indent several lines of code by at least four spaces, as in:</p>
 <div class="highlight"><pre>    <span class="c1">// Some comments</span>
     <span class="nx">line</span> <span class="mi">1</span> <span class="nx">of</span> <span class="nx">code</span>
     <span class="nx">line</span> <span class="mi">2</span> <span class="nx">of</span> <span class="nx">code</span>
     <span class="nx">line</span> <span class="mi">3</span> <span class="nx">of</span> <span class="nx">code</span>
 </pre></div>
-
-
 <div class="highlight"><pre><span class="c1">// Some comments</span>
 <span class="n">line</span> <span class="mh">1</span> <span class="n">of</span> <span class="n">code</span>
 <span class="n">line</span> <span class="mh">2</span> <span class="n">of</span> <span class="n">code</span>
 <span class="n">line</span> <span class="mh">3</span> <span class="n">of</span> <span class="n">code</span>
 </pre></div>
-
-
-<h3>Block code "fences"</h3>
+<h3 id="block-code-fences">Block code "fences"</h3>
 <p>Use "fences"  <code>```</code> to block in multiple lines of code. </p>
 <pre>
 
-wzxhzdk:20
+wzxhzdk:20
 
 </pre>
-
 <div class="highlight"><pre><span class="n">Sample</span> <span class="n">text</span> <span class="n">here</span><span class="p">...</span>
 </pre></div>
-
-
 <p>HTML:</p>
 <div class="highlight"><pre><span class="nt">&lt;pre&gt;</span>
   <span class="nt">&lt;p&gt;</span>Sample text here...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/pre&gt;</span>
 </pre></div>
-
-
-<h3>Syntax highlighting</h3>
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
 <p>GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", <code>``` js</code>, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:</p>
 <pre>
 
-wzxhzdk:23
+wzxhzdk:23
 
 </pre>
-
 <p>Renders to:</p>
 <div class="highlight"><pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
   <span class="nx">assemble</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">assets</span><span class="o">:</span> <span class="s1">&#39;docs/assets&#39;</span><span class="p">,</span>
-      <span class="nx">data</span><span class="o">:</span> <span class="s1">&#39;src/data/*.{json,yml}&#39;</span><span class="p">,</span>
-      <span class="nx">helpers</span><span class="o">:</span> <span class="s1">&#39;src/custom-helpers.js&#39;</span><span class="p">,</span>
-      <span class="nx">partials</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;src/partials/**/*.{hbs,md}&#39;</span><span class="p">]</span>
+      <span class="nx">assets</span><span class="o">:</span> <span class="s1">'docs/assets'</span><span class="p">,</span>
+      <span class="nx">data</span><span class="o">:</span> <span class="s1">'src/data/*.{json,yml}'</span><span class="p">,</span>
+      <span class="nx">helpers</span><span class="o">:</span> <span class="s1">'src/custom-helpers.js'</span><span class="p">,</span>
+      <span class="nx">partials</span><span class="o">:</span> <span class="p">[</span><span class="s1">'src/partials/**/*.{hbs,md}'</span><span class="p">]</span>
     <span class="p">},</span>
     <span class="nx">pages</span><span class="o">:</span> <span class="p">{</span>
       <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-        <span class="nx">layout</span><span class="o">:</span> <span class="s1">&#39;default.hbs&#39;</span>
+        <span class="nx">layout</span><span class="o">:</span> <span class="s1">'default.hbs'</span>
       <span class="p">},</span>
       <span class="nx">files</span><span class="o">:</span> <span class="p">{</span>
-        <span class="s1">&#39;./&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;src/templates/pages/index.hbs&#39;</span><span class="p">]</span>
+        <span class="s1">'./'</span><span class="o">:</span> <span class="p">[</span><span class="s1">'src/templates/pages/index.hbs'</span><span class="p">]</span>
       <span class="p">}</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">};</span>
 </pre></div>
-
-
 <p>And this complicated HTML:</p>
-<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;highlight&quot;</span><span class="nt">&gt;&lt;pre&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>grunt<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>.<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>initConfig<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>({<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>assemble<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>options<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>assets<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;docs/assets&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>data<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/data/*.{json,yml}&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>helpers<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/custom-helpers.js&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>partials<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>[<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/partials/**/*.{hbs,md}&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>]<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>},<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>pages<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>options<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>layout<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;default.hbs&#39;<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>},<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>files<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;./&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>[<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/templates/pages/index.hbs&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>]<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>};<span class="nt">&lt;/span&gt;</span>
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"highlight"</span><span class="nt">&gt;&lt;pre&gt;&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>grunt<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>.<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>initConfig<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>({<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>assemble<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>options<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>assets<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"s1"</span><span class="nt">&gt;</span>'docs/assets'<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>data<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"s1"</span><span class="nt">&gt;</span>'src/data/*.{json,yml}'<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>helpers<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"s1"</span><span class="nt">&gt;</span>'src/custom-helpers.js'<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>partials<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>[<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"s1"</span><span class="nt">&gt;</span>'src/partials/**/*.{hbs,md}'<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>]<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>},<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>pages<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>options<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>layout<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"s1"</span><span class="nt">&gt;</span>'default.hbs'<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>},<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nx"</span><span class="nt">&gt;</span>files<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"s1"</span><span class="nt">&gt;</span>'./'<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>[<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"s1"</span><span class="nt">&gt;</span>'src/templates/pages/index.hbs'<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>]<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>};<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/pre&gt;&lt;/div&gt;</span>
 </pre></div>
-
-
-<p><br>
-<br>
-<br></p>
-<h2>Tables</h2>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="tables">Tables</h2>
 <p>Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.</p>
 <div class="highlight"><pre><span class="o">|</span> <span class="n">Option</span> <span class="o">|</span> <span class="n">Description</span> <span class="o">|</span>
 <span class="o">|</span> <span class="o">------</span> <span class="o">|</span> <span class="o">-----------</span> <span class="o">|</span>
@@ -446,8 +395,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 <span class="o">|</span> <span class="n">engine</span> <span class="o">|</span> <span class="n">engine</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="k">for</span> <span class="n">processing</span> <span class="n">templates</span><span class="p">.</span> <span class="n">Handlebars</span> <span class="n">is</span> <span class="n">the</span> <span class="k">default</span><span class="p">.</span> <span class="o">|</span>
 <span class="o">|</span> <span class="n">ext</span>    <span class="o">|</span> <span class="n">extension</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="k">for</span> <span class="n">dest</span> <span class="n">files</span><span class="p">.</span> <span class="o">|</span>
 </pre></div>
-
-
 <p>Renders to:</p>
 <table>
 <thead>
@@ -491,9 +438,7 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
   <span class="nt">&lt;/tr&gt;</span>
 <span class="nt">&lt;/table&gt;</span>
 </pre></div>
-
-
-<h3>Right aligned text</h3>
+<h3 id="right-aligned-text">Right aligned text</h3>
 <p>Adding a colon on the right side of the dashes below any heading will right align text for that column.</p>
 <div class="highlight"><pre><span class="o">|</span> <span class="n">Option</span> <span class="o">|</span> <span class="n">Description</span> <span class="o">|</span>
 <span class="o">|</span> <span class="o">------:|</span> <span class="o">-----------:|</span>
@@ -501,8 +446,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 <span class="o">|</span> <span class="n">engine</span> <span class="o">|</span> <span class="n">engine</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="k">for</span> <span class="n">processing</span> <span class="n">templates</span><span class="p">.</span> <span class="n">Handlebars</span> <span class="n">is</span> <span class="n">the</span> <span class="k">default</span><span class="p">.</span> <span class="o">|</span>
 <span class="o">|</span> <span class="n">ext</span>    <span class="o">|</span> <span class="n">extension</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="k">for</span> <span class="n">dest</span> <span class="n">files</span><span class="p">.</span> <span class="o">|</span>
 </pre></div>
-
-
 <table>
 <thead>
 <tr>
@@ -525,81 +468,63 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 </tr>
 </tbody>
 </table>
-<p><br>
-<br>
-<br></p>
-<h2>Links</h2>
-<h3>Basic link</h3>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="links">Links</h2>
+<h3 id="basic-link">Basic link</h3>
 <div class="highlight"><pre><span class="p">[</span><span class="n">Assemble</span><span class="p">](</span><span class="n">http</span><span class="o">:</span><span class="c1">//assemble.io)</span>
 </pre></div>
-
-
 <p>Renders to (hover over the link, there is no tooltip):</p>
 <p><a href="http://assemble.io">Assemble</a></p>
 <p>HTML:</p>
-<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://assemble.io&quot;</span><span class="nt">&gt;</span>Assemble<span class="nt">&lt;/a&gt;</span>
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://assemble.io"</span><span class="nt">&gt;</span>Assemble<span class="nt">&lt;/a&gt;</span>
 </pre></div>
-
-
-<h3>Add a title</h3>
-<div class="highlight"><pre><span class="p">[</span><span class="n">Upstage</span><span class="p">](</span><span class="n">https</span><span class="o">:</span><span class="c1">//github.com/upstage/ &quot;Visit Upstage!&quot;)</span>
+<h3 id="add-a-title">Add a title</h3>
+<div class="highlight"><pre><span class="p">[</span><span class="n">Upstage</span><span class="p">](</span><span class="n">https</span><span class="o">:</span><span class="c1">//github.com/upstage/ "Visit Upstage!")</span>
 </pre></div>
-
-
 <p>Renders to (hover over the link, there should be a tooltip):</p>
 <p><a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a></p>
 <p>HTML:</p>
-<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://github.com/upstage/&quot;</span> <span class="na">title=</span><span class="s">&quot;Visit Upstage!&quot;</span><span class="nt">&gt;</span>Upstage<span class="nt">&lt;/a&gt;</span>
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://github.com/upstage/"</span> <span class="na">title=</span><span class="s">"Visit Upstage!"</span><span class="nt">&gt;</span>Upstage<span class="nt">&lt;/a&gt;</span>
 </pre></div>
-
-
-<h3>Named Anchors</h3>
+<h3 id="named-anchors">Named Anchors</h3>
 <p>Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:</p>
 <div class="highlight"><pre><span class="cp"># Table of Contents</span>
   <span class="o">*</span> <span class="p">[</span><span class="n">Chapter</span> <span class="mi">1</span><span class="p">](</span><span class="err">#</span><span class="n">chapter</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
   <span class="o">*</span> <span class="p">[</span><span class="n">Chapter</span> <span class="mi">2</span><span class="p">](</span><span class="err">#</span><span class="n">chapter</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
   <span class="o">*</span> <span class="p">[</span><span class="n">Chapter</span> <span class="mi">3</span><span class="p">](</span><span class="err">#</span><span class="n">chapter</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
-
-
 <p>will jump to these sections:</p>
-<div class="highlight"><pre><span class="err">##</span> <span class="nx">Chapter</span> <span class="mi">1</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="n">id</span><span class="o">=</span><span class="s2">&quot;chapter-1&quot;</span><span class="o">&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span class="err">##</span> <span class="nx">Chapter</span> <span class="mi">1</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="n">id</span><span class="o">=</span><span class="s2">"chapter-1"</span><span class="o">&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
 <span class="nb">Content</span> <span class="nb">for</span> <span class="nx">chapter</span> <span class="nx">one.</span>
 
-<span class="err">##</span> <span class="nx">Chapter</span> <span class="mi">2</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="n">id</span><span class="o">=</span><span class="s2">&quot;chapter-2&quot;</span><span class="o">&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
+<span class="err">##</span> <span class="nx">Chapter</span> <span class="mi">2</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="n">id</span><span class="o">=</span><span class="s2">"chapter-2"</span><span class="o">&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
 <span class="nb">Content</span> <span class="nb">for</span> <span class="nx">chapter</span> <span class="nx">one.</span>
 
-<span class="err">##</span> <span class="nx">Chapter</span> <span class="mi">3</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="n">id</span><span class="o">=</span><span class="s2">&quot;chapter-3&quot;</span><span class="o">&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
+<span class="err">##</span> <span class="nx">Chapter</span> <span class="mi">3</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="n">id</span><span class="o">=</span><span class="s2">"chapter-3"</span><span class="o">&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
 <span class="nb">Content</span> <span class="nb">for</span> <span class="nx">chapter</span> <span class="nx">one.</span>
 </pre></div>
-
-
 <p><strong>NOTE</strong> that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.</p>
-<p><br>
-<br>
-<br></p>
-<h2>Images</h2>
-<p>Images have a similar syntax to links but include a preceding exclamation point.</p>
-<div class="highlight"><pre><span class="o">!</span><span class="p">[</span><span class="n">Minion</span><span class="p">](</span><span class="n">http</span><span class="o">:</span><span class="c1">//octodex.github.com/images/minion.png)</span>
+<p><br/>
+<br/>
+<br/></p>
+<h2 id="images">Images</h2>
+<p>Images have a similar syntax to links but include a preceding exclamation point. </p>
+<div class="highlight"><pre><span class="o">!</span><span class="p">[</span><span class="n">Minion</span><span class="p">](</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">minion</span><span class="p">.</span><span class="n">png</span><span class="p">)</span>
 </pre></div>
-
-
-<p><img alt="Minion" src="http://octodex.github.com/images/minion.png" /></p>
+<p><img alt="Minion" src="/images/minion.png" style="width: 896px; height: auto;"/></p>
 <p>or</p>
-<div class="highlight"><pre><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="n">http</span><span class="o">:</span><span class="c1">//octodex.github.com/images/stormtroopocat.jpg &quot;The Stormtroopocat&quot;)</span>
+<div class="highlight"><pre><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">stormtroopocat</span><span class="p">.</span><span class="n">jpg</span> <span class="s">"The Stormtroopocat"</span><span class="p">)</span>
 </pre></div>
-
-
-<p><img alt="Alt text" src="http://octodex.github.com/images/stormtroopocat.jpg" title="The Stormtroopocat" /></p>
+<p><img alt="Alt text" src="/images/stormtroopocat.jpg" style="width: 704px; height: auto;" title="The Stormtroopocat"/></p>
 <p>Like links, Images also have a footnote style syntax</p>
 <div class="highlight"><pre><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">][</span><span class="kt">id</span><span class="p">]</span>
 </pre></div>
-
-
-<p><img alt="Alt text" src="http://octodex.github.com/images/dojocat.jpg" title="The Dojocat" /></p>
+<p><img alt="Alt text" src="/images/dojocat.jpg" style="width: 896px; height: auto;" title="The Dojocat"/></p>
 <p>With a reference later in the document defining the URL location:</p>
-<div class="highlight"><pre><span class="p">[</span><span class="n">id</span><span class="p">]</span><span class="o">:</span> <span class="n">http</span><span class="o">:</span><span class="c1">//octodex.github.com/images/dojocat.jpg  &quot;The Dojocat&quot;</span>
-</pre></div>
+<div class="highlight"><pre><span class="p">[</span><span class="n">id</span><span class="p">]</span><span class="o">:</span> <span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">dojocat</span><span class="p">.</span><span class="n">jpg</span>  <span class="s">"The Dojocat"</span>
+</pre></div></body></html>
             <aside>
             <hr/>
             <nav>
@@ -647,7 +572,7 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
 <footer>
 <div id="footer">
     <ul class="footer-content">
-        <li class="elegant-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc4.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Teramtiko</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Salih Emin</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</li>
+        <li class="elegant-license"><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc4.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Teramtiko</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="https://www.linkedin.com/in/salihemin" target="_blank">Salih Emin</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</li>
         <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
     </ul>
 </div>
