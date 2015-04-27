@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Salih Emin" />
+        <meta name="copyright" content="Salih Emin" />
+
+<meta name="keywords" content="git, bundle, backup, deploy, Repository, " />
+        <title>Create a backup or a bundle of your git repository  · termatiko@sysadmin.notes:~$
+</title>
+        <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./theme/css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/solarizedlight.css" media="screen">
+        <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./theme/images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" />
+        <link rel="icon" href="./theme/images/apple-touch-icon-144x144.png" />
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-62296099-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="./"><span class=site-name>termatiko@sysadmin.notes:~$</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href=".">Home</a></li>
+                            <li ><a href="./categories.html">Categories</a></li>
+                            <li ><a href="./tags.html">Tags</a></li>
+                            <li ><a href="./archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page_header span10 offset2">
+    <h1><a href="./git-bundle-backup.html"> Create a backup or a bundle of your git repository  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            <h1>Introduction</h1>
+<p><em>Keeping a backup or moving around a local repository while retaining its entire versioning information can be achieved with the current utilities of git.</em></p>
+<p>Bundles are a great way to backup entire Git repositories. They also let you share changes without a network connection.</p>
+<h1>Materials and Methods</h1>
+<p>We will use the <code>git bundle</code> utility inside our local repository and also <code>git merge</code> to deploy our bundled repo.</p>
+<p><em><code>git bundle</code> turns a repository into a single file that retains the versioning information of the entire project.</em></p>
+<p>Here are a list of options that are available:</p>
+<div class="highlight"><pre><span class="s1">&#39;git bundle&#39;</span> <span class="nb">create</span> <span class="o">&lt;</span><span class="nb">name</span><span class="na">-of-the-bundle</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">git</span><span class="na">-rev-list-args</span><span class="o">&gt;</span>
+<span class="s1">&#39;git bundle&#39;</span> <span class="nx">verify</span> <span class="o">&lt;</span><span class="nb">file</span><span class="o">&gt;</span>
+<span class="s1">&#39;git bundle&#39;</span> <span class="nx">unbundle</span> <span class="o">&lt;</span><span class="nb">file</span><span class="o">&gt;</span> <span class="err">[</span><span class="o">&lt;</span><span class="nx">refname</span><span class="o">&gt;</span><span class="nx">...</span><span class="cp">]</span>
+</pre></div>
+
+
+<h2>Create a bundle</h2>
+<p>While you are inside a repo run:</p>
+<div class="highlight"><pre><span class="n">git</span> <span class="n">bundle</span> <span class="n">create</span> <span class="p">..</span><span class="o">/</span><span class="n">myrepo</span><span class="p">.</span><span class="n">bundle</span> <span class="n">master</span><span class="err">`</span>
+</pre></div>
+
+
+<p>It should print out something like this:</p>
+<div class="highlight"><pre><span class="n">Counting</span> <span class="n">objects</span><span class="o">:</span> <span class="mi">43</span><span class="p">,</span> <span class="n">done</span><span class="p">.</span>
+<span class="n">Delta</span> <span class="n">compression</span> <span class="n">using</span> <span class="n">up</span> <span class="n">to</span> <span class="mi">2</span> <span class="n">threads</span><span class="p">.</span>
+<span class="n">Compressing</span> <span class="n">objects</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">39</span><span class="o">/</span><span class="mi">39</span><span class="p">),</span> <span class="n">done</span><span class="p">.</span>
+<span class="n">Writing</span> <span class="n">objects</span><span class="o">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">43</span><span class="o">/</span><span class="mi">43</span><span class="p">),</span> <span class="mf">54.44</span> <span class="n">KiB</span> <span class="o">|</span> <span class="mi">0</span> <span class="n">bytes</span><span class="o">/</span><span class="n">s</span><span class="p">,</span> <span class="n">done</span><span class="p">.</span>
+<span class="n">Total</span> <span class="mi">43</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">8</span><span class="p">),</span> <span class="n">reused</span> <span class="mi">0</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+
+<p>This will create the bundle outside (one folder above) the repo and name it <code>myrepo.bundle</code>. When we created the file It was like we where just pushing our master branch to a remote, except it’s contained in a file instead of a remote repository. </p>
+<h2>Verify the bundle</h2>
+<p>Before we move our bundle its a good idea to verify its content and check that the bundle file is valid and relevant to the current repository.</p>
+<p>While you are inside a repo run:</p>
+<div class="highlight"><pre><span class="n">git</span> <span class="n">bundle</span> <span class="n">verify</span> <span class="p">..</span><span class="o">/</span><span class="n">myrepo</span><span class="p">.</span><span class="n">bundle</span><span class="err">`</span>
+</pre></div>
+
+
+<p>It should print out something like this:</p>
+<div class="highlight"><pre><span class="n">The</span> <span class="n">bundle</span> <span class="n">contains</span> <span class="n">this</span> <span class="n">ref</span><span class="o">:</span>
+<span class="mi">230</span><span class="n">b04bdd3367b2db73</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">master</span>
+<span class="n">The</span> <span class="n">bundle</span> <span class="n">records</span> <span class="n">a</span> <span class="n">complete</span> <span class="n">history</span><span class="p">.</span>
+<span class="p">..</span><span class="o">/</span><span class="n">myrepo</span><span class="p">.</span><span class="n">bundle</span> <span class="n">is</span> <span class="n">okay</span>
+</pre></div>
+
+
+<h2>Deploy the bundle</h2>
+<p>Assuming that you have the <code>myrepo.bundle</code> file in <code>/home/user</code> and you have created a folder <code>newrepo</code> and initialized a git repository inside it. Here is a generic procedure:</p>
+<div class="highlight"><pre><span class="n">mkdir</span> <span class="n">newrepo</span>
+<span class="n">cd</span> <span class="n">newrepo</span>
+<span class="n">git</span> <span class="n">init</span>
+<span class="n">git</span> <span class="n">bundle</span> <span class="n">unbundle</span> <span class="p">..</span><span class="o">/</span><span class="n">myrepo</span><span class="p">.</span><span class="n">bundle</span>
+</pre></div>
+
+
+<p>the last command will inform you with the <code>HEAD</code> of you repo</p>
+<div class="highlight"><pre><span class="n">f7243ba54eb7de4b76a0</span> <span class="n">HEAD</span>
+</pre></div>
+
+
+<p>Now you can merge the contents of <code>myrepo.bubdle</code> file with the one that you initialized inside the <code>newrepo</code> folder:</p>
+<div class="highlight"><pre><span class="n">git</span> <span class="n">merge</span> <span class="n">f7243b</span>
+</pre></div>
+
+
+<p>Alternative procedures are also available, so please follow the links provided on the <em>References</em> section</p>
+<h1>Results and discussion</h1>
+<p>As you can see once you create the bundle file you can easily move it to another folder on the same or an other machine. Assume you want to transfer the history from a repository R1 on machine A to another repository R2 on machine B. For whatever reason, direct connection between A and B is not allowed, but we can move data from A to B via some mechanism (USB flash drive, email, etc..). This way we can update R2 with development made on the branch master in R1.</p>
+<h1>References</h1>
+<ol>
+<li>Ryan Hodson, Git Tips &amp; Tricks : <a href="http://rypress.com/tutorials/git/tips-and-tricks">rypress.com</a></li>
+<li>Scott Chacon and Ben Straub, Pro Git : <a href="http://git-scm.com/docs/git-bundle">git-scm.com</a></li>
+</ol>
+            <aside>
+            <hr/>
+            <nav>
+            <ul class="articles_timeline">
+ 
+                <li class="previous_article">« <a href="./github-change-url.html" title="Previous: Changing a local git repo's remote URL">Changing a local git repo's remote URL</a></li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+ 
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2015-04-27T12:58:00+02:00">Απρ 27, 2015</time>
+ 
+            <h4>Last Updated</h4>
+            <div class="last_updated">2015-04-27 12:58:00+02:00</div>
+            <h4>Category</h4>
+            <a class="category-link" href="/categories.html#Repository-ref">Repository</a> 
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article"> 
+                <li><a href="/tags.html#backup-ref">backup
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#bundle-ref">bundle
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#deploy-ref">deploy
+                    <span>1</span>
+</a></li>
+                <li><a href="/tags.html#git-ref">git
+                    <span>2</span>
+</a></li>
+            </ul>
+
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    </body>
+</html>
